@@ -1,0 +1,20 @@
+<div class="contact-container">
+    <h2>Get In Touch</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <input formControlName="name" placeholder="Name">
+    <input formControlName="email" placeholder="E-Mail">
+    <input formControlName="subject" placeholder="Subject">
+    <textarea formControlName="message" placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+@if(submitted){
+    <p class="success-message">Thank you! Your message has been sent.</p>
+}
+
+<div class="contact-info">
+    <p>Email:preranavishwakarma025@gmail.com</p>
+    <a href="https://github.com/ItsPreranax" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/prerana-vishwakarma-390639338" target="_blank">LinkedIn</a>
+</div>
+</div>

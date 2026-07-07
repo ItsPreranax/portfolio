@@ -1,0 +1,13 @@
+@if(experiences.length===0){
+    <p class="empty-message">Currently seeking my first opportunity -- stay tuned!</p>
+}@else{
+    <div class="experience-list">
+        @for(exp of experiences; track exp.company){
+        <div class="experience-card">
+            <h3> {{exp.role}} -- {{exp.company}}</h3>
+            <p class="duration">{{exp.startDate}} -- {{exp.endDate}}</p>/
+            <p>{{exp.description}}</p>
+        </div>
+        }
+    </div>
+}

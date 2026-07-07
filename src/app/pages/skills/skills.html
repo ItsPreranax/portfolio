@@ -1,0 +1,20 @@
+<h3>Technical Skills</h3>
+
+<div class="skills-grid">
+ @for(skill of skills;track skill.name){
+    @if(skill.type==='technical'){
+        <div class="skill-card">{{skill.name}}</div>
+    }
+ }
+ </div>
+
+ <h3>Soft Skills</h3>
+
+<div class="skills-grid">
+    @for(skill of skills;track skill.name){
+    @if(skill.type==='soft'){
+        <div class="skill-card soft">{{skill.name}}</div>
+    }
+ }
+</div>
+
