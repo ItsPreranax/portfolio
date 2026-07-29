@@ -1,6 +1,6 @@
 <div class="contact-container">
-    <h2>Get In Touch</h2>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <h2 animate.enter="fade-in">Get In Touch</h2>
+    <form animate.enter="fade-in" style="animation-delay: 0.15s;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <input formControlName="name" placeholder="Name">
     <input formControlName="email" placeholder="E-Mail">
     <input formControlName="subject" placeholder="Subject">
@@ -12,7 +12,7 @@
     <p class="success-message">Thank you! Your message has been sent.</p>
 }
 
-<div class="contact-info">
+<div class="contact-info" animate.enter="fade-in" style="animation-delay: 0.3s;">
     <p>Email:preranavishwakarma025@gmail.com</p>
     <a href="https://github.com/ItsPreranax" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/prerana-vishwakarma-390639338" target="_blank">LinkedIn</a>

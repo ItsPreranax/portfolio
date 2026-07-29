@@ -6,19 +6,19 @@
 
 .about-container h2 {
   font-size: 1.8rem;
-  color: #1e1e2f;
+  color: var(--text-color);
   margin-bottom: 12px;
 }
 
 .about-container h3 {
   margin: 30px 0 10px;
-  color: #1e1e2f;
-  border-left: 4px solid #4f46e5;
+  color: var(--text-color);
+  border-left: 4px solid var(--accent-color);
   padding-left: 10px;
 }
 
 .about-container p {
-  color: #444;
+  color: var(--text-muted);
   line-height: 1.7;
   font-size: 1rem;
 }
@@ -30,8 +30,8 @@ section {
 .resume-btn {
   display: inline-block;
   margin-top: 30px;
-  background-color: #4f46e5;
-  color: white;
+  background-color:var(--accent-color);
+  color:white;
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -50,12 +50,27 @@ section {
 }
 
 .coding-profiles li{
-  color: #444;
+  color:var(--text-muted);
   line-height: 1.7;
   font-size: 1rem;
   margin-bottom: 8px;
 }
 
 .coding-profiles li strong{
-  color: #1e1e2f;
+  color: var(--text-color);
+}
+
+.fade-in{
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

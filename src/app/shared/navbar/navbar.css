@@ -3,8 +3,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #1e1e2f;
-    color: white;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -22,7 +22,7 @@ nav{
 
 .nav-links a{
     text-decoration: none;
-    color: #ddd;
+    color: var(--navbar-text);
     padding: 8px 14px;
     border-radius: 6px;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -34,9 +34,17 @@ nav{
 }
 
 .nav-links a.active{
-    background-color: #4f46e5;
+    background-color: var(--accent-color);
     color: white;
     font-weight: 600;
+}
+.theme-toggle{
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 4px 10px;
+
 }
 
 @media (max-width:600px){

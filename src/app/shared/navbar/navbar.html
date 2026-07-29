@@ -8,4 +8,7 @@
 <a routerLink="/experience" routerLinkActive="active">Experience</a>
 <a routerLink="/contact" routerLinkActive="active">Contact</a>
 </div>
+<button (click)="themeService.toggleTheme()" class="theme-toggle">
+    {{themeService.isDarkMode?'☀️' : '🌙' }}
+</button>
 </nav>
