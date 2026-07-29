@@ -11,6 +11,7 @@ export class Projects implements OnInit{
   projects:Project[]=[];
 
   constructor(private dataProjects:Data){}
+  //object created here aotumativcally when you write this then only;--this process is called depedancy injection
 
   ngOnInit(){
     this.projects=this.dataProjects.getProjects();

@@ -1,9 +1,11 @@
 <h3>Technical Skills</h3>
 
 <div class="skills-grid">
- @for(skill of skills;track skill.name){
+ @for(skill of skills;track skill.name;let i=$index){
     @if(skill.type==='technical'){
-        <div class="skill-card">{{skill.name}}</div>
+        <div class="skill-card" animate.enter="fade-in"[style.animation-delay.ms]="i*100">
+            {{skill.name}}
+        </div>
     }
  }
  </div>
@@ -11,9 +13,11 @@
  <h3>Soft Skills</h3>
 
 <div class="skills-grid">
-    @for(skill of skills;track skill.name){
+    @for(skill of skills;track skill.name;let i=$index){
     @if(skill.type==='soft'){
-        <div class="skill-card soft">{{skill.name}}</div>
+        <div class="skill-card soft" animate.enter="fade-in"[style.animation-delay.ms]="i*100">
+            {{skill.name}}
+        </div>
     }
  }
 </div>

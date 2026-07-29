@@ -76,3 +76,24 @@ img {
 .social-links a:hover {
   text-decoration: underline;
 } */
+
+.fade-in{
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+h1.fade-in{animation-delay: 0s;}
+p.fade-in:nth-of-type(1){animation-delay: 0.15s;}
+p.fade-in:nth-of-type(2){animation-delay: 0.3s;}
+img.fade-in{animation-delay: 0.45s;}
+.cta-buttons.fade-in{animation-delay: 0.6s;}
+
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

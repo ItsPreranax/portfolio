@@ -2,8 +2,8 @@
     <p class="empty-message">Currently seeking my first opportunity -- stay tuned!</p>
 }@else{
     <div class="experience-list">
-        @for(exp of experiences; track exp.company){
-        <div class="experience-card">
+        @for(exp of experiences; track exp.company;let i=$index){
+        <div class="experience-card" animate.enter="fade-in"[style.animation-delay.ms]="i*100">
             <h3> {{exp.role}} - {{exp.company}}</h3>
             <p class="duration">{{exp.startDate}} - {{exp.endDate}}</p>
             <p>{{exp.description}}</p>

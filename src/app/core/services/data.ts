@@ -20,9 +20,9 @@ export interface ExperienceItem{
   endDate:string;
   description:string;
 }
-
+//this is used to create object
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root',//this allows only 1 object to be created--singleton services
 })
 export class Data {
   skills: Skill[] = [
@@ -36,8 +36,9 @@ export class Data {
   { name: 'Data Structures', type: 'technical' },
   { name: 'OOP', type: 'technical' },
   { name: 'DBMS', type: 'technical' },
-    { name: 'Angular', type: 'technical' },
+  { name: 'Angular', type: 'technical' },
   { name: 'Communication', type: 'soft' },
+
   { name: 'Teamwork', type: 'soft' },
   { name: 'Problem Solving', type: 'soft' },
 ];

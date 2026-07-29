@@ -1,6 +1,6 @@
 <div class="projects-grid">
-@for(project of projects;track project.name){
-    <div class="project-card">
+@for(project of projects;track project.name;let i=$index){
+    <div class="project-card" animate.enter="fade-in"[style.animation-delay.ms]="i*100">
         <h3>{{project.name}}</h3>
         <p>{{project.description}}</p>
         <p class="tech-stack">{{project.techStack.join(' . ')}}</p>
